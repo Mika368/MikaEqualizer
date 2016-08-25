@@ -15,6 +15,8 @@
 		258CE97A1D6ED0BF00C18E76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 258CE9781D6ED0BF00C18E76 /* LaunchScreen.storyboard */; };
 		258CE9851D6ED0BF00C18E76 /* MikaEqualizerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 258CE9841D6ED0BF00C18E76 /* MikaEqualizerTests.m */; };
 		258CE9901D6ED0BF00C18E76 /* MikaEqualizerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 258CE98F1D6ED0BF00C18E76 /* MikaEqualizerUITests.m */; };
+		258CE99F1D6ED29F00C18E76 /* specialPeople.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 258CE99E1D6ED29F00C18E76 /* specialPeople.mp3 */; };
+		CE1D70BF143C543CE619B306 /* Pods_MikaEqualizer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 341A3801E108B7E561A9B9C9 /* Pods_MikaEqualizer.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		258CE98B1D6ED0BF00C18E76 /* MikaEqualizerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MikaEqualizerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		258CE98F1D6ED0BF00C18E76 /* MikaEqualizerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MikaEqualizerUITests.m; sourceTree = "<group>"; };
 		258CE9911D6ED0BF00C18E76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		258CE99E1D6ED29F00C18E76 /* specialPeople.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = specialPeople.mp3; sourceTree = "<group>"; };
+		341A3801E108B7E561A9B9C9 /* Pods_MikaEqualizer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MikaEqualizer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54278DD2BE81E77F3D0BB992 /* Pods-MikaEqualizer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MikaEqualizer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MikaEqualizer/Pods-MikaEqualizer.debug.xcconfig"; sourceTree = "<group>"; };
+		EF5D11E2858076549FC514B5 /* Pods-MikaEqualizer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MikaEqualizer.release.xcconfig"; path = "Pods/Target Support Files/Pods-MikaEqualizer/Pods-MikaEqualizer.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE1D70BF143C543CE619B306 /* Pods_MikaEqualizer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +92,8 @@
 				258CE9831D6ED0BF00C18E76 /* MikaEqualizerTests */,
 				258CE98E1D6ED0BF00C18E76 /* MikaEqualizerUITests */,
 				258CE9681D6ED0BF00C18E76 /* Products */,
+				E1FBEE37116CC556CFD2803F /* Pods */,
+				DE8E73112145EC7F0184F8B4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -109,6 +118,7 @@
 				258CE9761D6ED0BF00C18E76 /* Assets.xcassets */,
 				258CE9781D6ED0BF00C18E76 /* LaunchScreen.storyboard */,
 				258CE97B1D6ED0BF00C18E76 /* Info.plist */,
+				258CE99E1D6ED29F00C18E76 /* specialPeople.mp3 */,
 				258CE96A1D6ED0BF00C18E76 /* Supporting Files */,
 			);
 			path = MikaEqualizer;
@@ -140,6 +150,23 @@
 			path = MikaEqualizerUITests;
 			sourceTree = "<group>";
 		};
+		DE8E73112145EC7F0184F8B4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				341A3801E108B7E561A9B9C9 /* Pods_MikaEqualizer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1FBEE37116CC556CFD2803F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				54278DD2BE81E77F3D0BB992 /* Pods-MikaEqualizer.debug.xcconfig */,
+				EF5D11E2858076549FC514B5 /* Pods-MikaEqualizer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +174,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 258CE9941D6ED0BF00C18E76 /* Build configuration list for PBXNativeTarget "MikaEqualizer" */;
 			buildPhases = (
+				2DB72F4038BAD850574D9179 /* [CP] Check Pods Manifest.lock */,
 				258CE9631D6ED0BF00C18E76 /* Sources */,
 				258CE9641D6ED0BF00C18E76 /* Frameworks */,
 				258CE9651D6ED0BF00C18E76 /* Resources */,
+				3938B3BD10003A8E28765343 /* [CP] Embed Pods Frameworks */,
+				667D03F2C7C029541E50D0D2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -244,6 +274,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				258CE97A1D6ED0BF00C18E76 /* LaunchScreen.storyboard in Resources */,
+				258CE99F1D6ED29F00C18E76 /* specialPeople.mp3 in Resources */,
 				258CE9771D6ED0BF00C18E76 /* Assets.xcassets in Resources */,
 				258CE9751D6ED0BF00C18E76 /* Main.storyboard in Resources */,
 			);
@@ -264,6 +295,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2DB72F4038BAD850574D9179 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3938B3BD10003A8E28765343 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MikaEqualizer/Pods-MikaEqualizer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		667D03F2C7C029541E50D0D2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MikaEqualizer/Pods-MikaEqualizer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		258CE9631D6ED0BF00C18E76 /* Sources */ = {
@@ -413,6 +492,7 @@
 		};
 		258CE9951D6ED0BF00C18E76 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 54278DD2BE81E77F3D0BB992 /* Pods-MikaEqualizer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MikaEqualizer/Info.plist;
@@ -424,6 +504,7 @@
 		};
 		258CE9961D6ED0BF00C18E76 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF5D11E2858076549FC514B5 /* Pods-MikaEqualizer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = MikaEqualizer/Info.plist;
@@ -498,6 +579,7 @@
 				258CE9961D6ED0BF00C18E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		258CE9971D6ED0BF00C18E76 /* Build configuration list for PBXNativeTarget "MikaEqualizerTests" */ = {
 			isa = XCConfigurationList;
@@ -506,6 +588,7 @@
 				258CE9991D6ED0BF00C18E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		258CE99A1D6ED0BF00C18E76 /* Build configuration list for PBXNativeTarget "MikaEqualizerUITests" */ = {
 			isa = XCConfigurationList;
@@ -514,6 +597,7 @@
 				258CE99C1D6ED0BF00C18E76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
