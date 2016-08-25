@@ -42,6 +42,7 @@
     if ( !result ) {
         NSLog(@"发生错误:%@",error);
     }
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"specialPeople" ofType:@"mp3"];
     self.player = [[AEAudioFilePlayer alloc] initWithURL:[NSURL fileURLWithPath:path] error:&error];
     //设置高通音效
